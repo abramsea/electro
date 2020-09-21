@@ -1,0 +1,230 @@
+.card {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+    text-align: left;
+    margin: 180px 0 0 0;
+    width: 100%;
+}
+
+.card_type_fullwidth {
+    margin: 40px 0 0 0;
+}
+
+.card__video {
+    width: 698px;
+    height: 400px;
+}
+
+img.card__video {
+    height: auto;
+}
+
+.card__video_order_2 {
+    order: 2;
+}
+
+.card__info {
+    max-width: 698px;
+    background: url(../images/ebg.svg) center no-repeat;
+    background-size: cover;
+}
+
+.card_type_fullwidth .card__info {
+    max-width: 100%;
+}
+
+.card__title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 1.2;
+}
+
+.card__info_order_1 {
+    order: 1;
+}
+
+.card__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.card__description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 40px 0 0 0;
+}
+
+.card__description_order_2 {
+    order: 2;
+}
+
+.card__description-box_order_1 {
+    order: 1;
+}
+
+
+.card__image {
+    max-width: 395px;
+}
+
+.card__price {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    display: block;
+    margin: 40px 0;
+}
+
+.card__buttons {
+    margin: 40px 0 0 0;
+    display: flex;
+    gap: 40px;
+}
+
+.card__button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1;
+    border: 1px solid #36333f;
+    width: 180px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.card__button_type_read {
+    border: none;
+}
+
+.card_type_second {
+    align-items: flex-start;
+}
+
+.card__description_no-margin {
+    margin: 0;
+}
+
+.card__image-box {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+
+.card__image {
+    max-width: 395px;
+}
+
+@media screen and (max-width: 1919px) {
+    .card {
+        gap: 32px;
+    }
+
+    .card__description {
+        margin: 32px 0 0 0;
+    }
+
+    .card__description_no-margin {
+        margin: 0;
+    }
+
+    .card__image-box {
+        gap: 32px;
+    }
+
+    .card__image {
+        max-width: 278px;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+
+    .card {
+        margin: 28px 0;
+        flex-direction: column;
+    }
+
+    .card_type_second {
+        flex-direction: column;
+    }
+
+    .card__video {
+        width: 100%;
+        height: 500px;
+    }
+
+    .card__video_order_2 {
+        order: 1;
+    }
+
+    .card__info_order_1 {
+        order: 2;
+    }
+
+    .card__description_order_2 {
+        order: 2;
+    }
+    
+    .card__description-box_order_1 {
+        order: 2;
+    }
+    
+
+    .card__info {
+        width: 100%;
+    }
+
+    .card__image {
+        max-width: 48%;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .card__description {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .card__price-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0 0 0;
+        width: 100%;
+    }
+
+    .card__price {
+        margin: 0;
+    }
+
+    .card__buttons {
+        margin: 0;
+    }
+
+    .card__button_type_read {
+        display: none;
+    }
+
+    .card__image-box {
+        gap: 16px; 
+    }
+
+    .card__video {
+        width: 100%;
+        height: 300px;
+    }
+
+}
