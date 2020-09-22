@@ -45,7 +45,7 @@ img.card__video {
 }
 
 .card__title {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 44px;
     line-height: 1.2;
@@ -58,7 +58,7 @@ img.card__video {
 }
 
 .card__subtitle {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 18px;
     line-height: 28px;
@@ -68,7 +68,7 @@ img.card__video {
 }
 
 .card__description {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 18px;
     line-height: 30px;
@@ -96,7 +96,7 @@ img.card__video {
 }
 
 .card__price {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
@@ -113,7 +113,7 @@ img.card__video {
 }
 
 .card__button {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 18px;
     line-height: 1;
