@@ -163,11 +163,11 @@ img.card__video {
     background-color: #000;
     display: block;
     content: '';
-    height: 2px;
+    height: 1px;
     width: 0%;
-    -webkit-transition: width .3s ease-in-out;
-    -moz--transition: width .3s ease-in-out;
-    transition: width .3s ease-in-out;
+    -webkit-transition: width .2s ease-in-out;
+    -moz--transition: width .2s ease-in-out;
+    transition: width .2s ease-in-out;
 }
 
 .card__button_type_read:hover::after, .card__button_type_read:focus::after {

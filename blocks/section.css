@@ -36,11 +36,6 @@
     background: #fff;
 }
 
-.section__image {
-    max-width: 100%;
-    margin: 0 12px;
-}
-
 .section__image-box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -50,6 +45,17 @@
         -ms-flex-pack: center;
             justify-content: center;
 }
+
+.section__image {
+    max-width: 100%;
+    margin: 0 12px;
+}
+
+.section__image_solo {
+    margin: 0 auto;
+}
+
+
 
 
 @media screen and (max-width: 1919px) {
