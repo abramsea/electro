@@ -38,14 +38,14 @@
 
 .section__image {
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0 12px;
 }
 
 .section__image-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 60px;
+    gap: 12px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -63,9 +63,6 @@
         height: 20px;
     }
 
-    .section__image-box { 
-        gap: 32px;
-    }
 }
 
 @media screen and (max-width: 1279px) {
@@ -74,7 +71,7 @@
     }
 
     .section__square {
-        top: 0;
+        top: 20px;
         right: 0;
         left: auto;
     }
@@ -87,7 +84,4 @@
         display: none; 
     }
 
-    .section__image-box {
-        gap: 16px;
-    }
 }

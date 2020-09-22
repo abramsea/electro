@@ -88,8 +88,19 @@ img.card__video {
 }
 
 
+.card__image-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+
 .card__image {
     max-width: 395px;
+    margin: 0 12px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -118,11 +129,10 @@ img.card__video {
     font-size: 18px;
     line-height: 1;
     border: 1px solid #36333f;
-    width: 180px;
-    height: 40px;
+    padding: 12px 60px;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: inline-block;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -144,6 +154,27 @@ img.card__video {
     border: none;
 }
 
+.card__button_type_read:hover {
+    background: transparent;
+    color: #000;
+}
+
+.card__button_type_read::after {
+    background-color: #000;
+    display: block;
+    content: '';
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.card__button_type_read:hover::after, .card__button_type_read:focus::after {
+    width: 100%;
+}
+
+
 .card_type_second {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -154,23 +185,11 @@ img.card__video {
     margin: 0;
 }
 
-.card__image-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 60px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-}
 
-.card__image {
-    max-width: 395px;
-}
 
 @media screen and (max-width: 1919px) {
     .card {
-        gap: 32px;
+        gap: 12px;
     }
 
     .card__description {
@@ -181,9 +200,6 @@ img.card__video {
         margin: 0;
     }
 
-    .card__image-box {
-        gap: 32px;
-    }
 
     .card__image {
         max-width: 278px;
@@ -277,10 +293,6 @@ img.card__video {
 
     .card__button_type_read {
         display: none;
-    }
-
-    .card__image-box {
-        gap: 16px; 
     }
 
     .card__video {

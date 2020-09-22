@@ -72,6 +72,27 @@
 .header__menu-item-link {
     text-decoration: none;
     text-transform: uppercase;
+    display: inline-block;
+}
+
+.header__menu-item-link:hover {
+    background: transparent;
+    color: #000;
+}
+
+.header__menu-item-link::after {
+    background-color: #000;
+    display: block;
+    content: '';
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.header__menu-item-link:hover::after, .header__menu-item-link:focus::after {
+    width: 100%;
 }
 
 .header__cross {
