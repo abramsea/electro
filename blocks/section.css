@@ -90,4 +90,8 @@
         display: none; 
     }
 
+    .section__image {
+        margin: 0 4px;
+    }
+
 }
