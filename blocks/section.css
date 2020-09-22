@@ -5,6 +5,12 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    transition: all .3s;
+}
+
+#section-top {
+    opacity: 1;
 }
 
 .section__square {
@@ -29,6 +35,7 @@
 .section__image-box {
     display: flex;
     gap: 60px;
+    justify-content: center;
 }
 
 

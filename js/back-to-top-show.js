@@ -1,6 +1,6 @@
 
 const scrollUp = `
-    <a class="back-to-top" href="#menu"><i class="fas fa-chevron-circle-up"></i></a>
+    <a class="back-to-top" href="#top"><i class="fas fa-chevron-circle-up"></i></a>
     `
 
 $('body').append(scrollUp);

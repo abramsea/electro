@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .header__burger-img {
@@ -29,9 +30,56 @@
     width: 80px;
 }
 
+.header__menu {
+    padding: 120px 80px;
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    color: #36333f;
+    position: absolute;
+    left: 0;
+    top: -620px;
+    z-index: 1000;
+    transition: all .3s;
+    box-shadow: 2px 2px 30px -7px rgba(0, 0, 0, 0.25);
+}
+
+.header__menu-item {
+    padding: 20px 0;
+    list-style-type: none;
+}
+
+.header__menu-item:first-of-type {
+    padding: 0 0 20px 0;
+}
+
+.header__menu-item:last-of-type {
+    padding: 20px 0 0 0;
+}
+.header__menu-item-link {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header__cross {
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1919px) {
     .header {
         padding: 32px 44px;
+    }
+
+    .header__menu {
+        padding: 120px 44px;
+    }
+
+    .header__cross {
+        left: 44px;
     }
 }
 
@@ -39,11 +87,30 @@
     .header {
         padding: 32px 20px;
     }
+
+    .header__menu {
+        padding: 120px 20px;
+    }
+
+    .header__cross {
+        left: 20px;
+    }
 }
 
 @media screen and (max-width: 767px) {
     .header {
         padding: 24px 20px;
+    }
+
+    .header__menu {
+        padding: 72px 20px;
+        font-size: 14px;
+        max-width: 320px;
+    }
+
+    .header__cross {
+        left: 20px;
+        top: 24px;
     }
 
     .header__logo {

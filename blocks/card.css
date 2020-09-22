@@ -53,6 +53,7 @@ img.card__video {
     line-height: 28px;
     letter-spacing: 6px;
     text-transform: uppercase;
+    margin: 12px 0 0 0;
 }
 
 .card__description {
@@ -103,6 +104,12 @@ img.card__video {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    transition: all .3s;
+}
+
+.card__button:hover {
+    background: #000;
+    color: #fff;
 }
 
 .card__button_type_read {
